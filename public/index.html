@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="div-container">
+    <h2>Ingrese los Productos</h2>
+
+    <form onsubmit=" return addProducto(this)" class="formulario-producto">
+        <div class="div">
+         <p class="descripcion">Nombre:</p>  <input type="text" id="nombre" placeholder="Nombre">
+       </div>
+       <div class="div" >
+         <p class="descripcion"> Precio: </p><input type="number" id="precio" placeholder="precio">
+       </div>
+       <div class="div">
+          <p class="descripcion">Foto:</p><input type="text" id="foto"placeholder="foto">
+       </div>
+        <button  type="submit" id="button-productos">Enviar</button>
+    </form>
+
+    <div class="historial"> 
+        <div class="historial-h3">
+            <h3>Nombre</h3>
+            <h3>Precio</h3>
+            <h3>Foto</h3>
+       </div>
+
+       <div id="producto">
+      
+      </div>
+   </div>
+</div>
+    <!-- Aqui vienen el formulario de envio de mensajes al server -->
+<div class="div-container">
+
+    <h2>Centro de mensajes</h2>
+
+    <form onsubmit=" return addMensaje(this)"  >
+        <div class="input-group">
+            <div class="div">
+            Nombre: <input type="text" id="author" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="contenedor-mensaje">
+                <div id="mensaje">
+
+                </div>
+           </div>
+            <div class="div">
+             Mensaje:<input type="text" id="text" class="form-control" placeholder="Ingresa un mensaje mensaje..">
+            </div>
+            <button class="btn btn-uotline-secondary" type="submit" id="button-addon2">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                </svg>
+              Enviar
+           </button>
+        </div>
+    </form>
+   
+
+</div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

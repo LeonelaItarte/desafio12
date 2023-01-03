@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-container{
+    width: 40%;
+    height: auto;
+    padding: 15px;
+    background-color: rgb(197, 191, 191);
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.formulario-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+input{
+    width:85%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+   
+   
+}
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+}
+.div{
+   width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.descripcion{
+    margin: 0;
+    
+}
+
+
+.historial{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding: 15px;
+    background-color:gray;
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+h3{
+    width: 50%;
+    height: 40px;
+}
+.historial-h3{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+#producto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    }
+.producto-pincipal{
+   display: flex;
+   justify-content:space-around;
+   
+}
+.producto{
+    width: 10%;
+    height: 40px;
+}
+.contenedor-mensaje{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chat{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#mensaje{
+    display: flex;
+  flex-direction: column;
+    width: 100%;
+}
+
+.mensaje2{
+    display: flex;
+ 
+}
+img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+.producto-img{
+    width: 10%;
+    height: auto;
+}
